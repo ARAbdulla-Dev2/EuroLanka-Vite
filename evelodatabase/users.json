@@ -1,0 +1,21 @@
+[
+   {
+      "id": "user_1750476548458",
+      "username": "ardev",
+      "password": "321465",
+      "fullName": "A R Abdullah",
+      "profilePic": "/img/pp/user_1750476548442.png",
+      "plan": "Basic",
+      "companyInfo": {
+         "companyName": "ARAbdulla-Dev",
+         "address": "ONLINE",
+         "phone": "0704281955",
+         "email": "arabdullahdev@gmail.com",
+         "website": "https://arabdullah.top",
+         "logo": "/db/img/pp/company_user_1750476548453.png"
+      },
+      "createdAt": "2025-06-21T03:29:08.458Z",
+      "lastLogin": null,
+      "noOfItineraries": 0
+   }
+]

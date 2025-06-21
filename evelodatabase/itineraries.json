@@ -1,0 +1,220 @@
+{
+  "user_1750476548458": {
+    "itin_1750491928113_kgvxbdo5p": {
+      "id": "itin_1750491928113_kgvxbdo5p",
+      "userId": "user_1750476548458",
+      "timestamp": "2025-06-21T07:45:28.113Z",
+      "data": {
+        "itineraryName": "Itinerary One",
+        "coverImage": "default",
+        "customImage": null,
+        "touristName": "jhoneee",
+        "numberOfTravelers": "4",
+        "tourStartDate": "2025-06-21",
+        "numberOfDays": 3,
+        "dailyPlans": [
+          {
+            "day": 1,
+            "place": "Jaffna",
+            "activity": "Mannar- Jaffna",
+            "customActivity": "",
+            "overnightStay": false,
+            "hotel": "",
+            "customHotel": "",
+            "meals": {
+              "breakfast": true,
+              "lunch": false,
+              "dinner": false
+            },
+            "description": "After breakfast in Mannar, we are heading to Jaffna; Jaffna or Yalpanam is the capital city of the Northern Province of Sri Lanka. Most of the residents of Jaffna are Sri Lankan Tamils with a presence of Sri Lankan Moors and Portuguese Burghers .Yarlpanam is believed to have got its name from Yarl and Panam meaning the land of the Yarl or Veenai, a musical instrument; derived from the myth that this land was received by a Yarl player as a Royal grant in appreciation of his musical performance.            In the evening, we do a city tour of Jaffna covering culture, religions and enjoy some food while mingling with locals"
+          },
+          {
+            "day": 2,
+            "place": "Galle",
+            "activity": "Ella, Galle",
+            "customActivity": "",
+            "overnightStay": false,
+            "hotel": "",
+            "customHotel": "",
+            "meals": {
+              "breakfast": false,
+              "lunch": true,
+              "dinner": true
+            },
+            "description": "After breakfast we have time to continue enjoying and exploring the nature of Ella until your transfer  to  In the afternoon, we are heading to Galle. Dinner with my family in Galle"
+          },
+          {
+            "day": 3,
+            "place": "Matara",
+            "activity": "Runnninggg........",
+            "customActivity": "Runnninggg........",
+            "overnightStay": false,
+            "hotel": "",
+            "customHotel": "",
+            "meals": {
+              "breakfast": false,
+              "lunch": true,
+              "dinner": false
+            },
+            "description": "Run with elephants :D..."
+          }
+        ],
+        "route": "Jaffna - Galle - Matara",
+        "routePlaces": [
+          "Jaffna",
+          "Galle",
+          "Matara"
+        ],
+        "timestamp": "2025-06-21T07:45:28.102Z",
+        "status": "draft",
+        "version": 1
+      },
+      "lastModified": "2025-06-21T07:45:28.113Z",
+      "status": "active"
+    },
+    "itin_1750495979960_xcgb5zvhl": {
+      "id": "itin_1750495979960_xcgb5zvhl",
+      "userId": "user_1750476548458",
+      "timestamp": "2025-06-21T08:52:59.961Z",
+      "data": {
+        "itineraryName": "My Awsome Trip Test",
+        "coverImage": "default",
+        "customImage": null,
+        "touristName": "Jhon Doe",
+        "numberOfTravelers": "5",
+        "tourStartDate": "2025-06-21",
+        "numberOfDays": 3,
+        "dailyPlans": [
+          {
+            "day": 1,
+            "place": "Galle",
+            "activity": "Galle,Colombo, Departure",
+            "customActivity": "",
+            "overnightStay": true,
+            "hotel": "Jetwing Lighthouse",
+            "customHotel": "",
+            "meals": {
+              "breakfast": true,
+              "lunch": true,
+              "dinner": true
+            },
+            "description": "Breakfast in Galle–Explore Dutch heritage in Galle by tuk-tuk and you will explore historical importance  of Galle Fort. The ramparts, colonial buildings, clock tower, light house, museum & old church, mosque  & Buddhist temple are covered in this guided tour.  After lunch we are heading to colombo for site seeing the Red Mosque and other attractions in  Colombo. After a mouthwatering Banana Leaf dinner, driver will drop you at the airport for departure  flight"
+          },
+          {
+            "day": 2,
+            "place": "Akuressa",
+            "activity": "Running in Akuressa :D",
+            "customActivity": "Running in Akuressa :D",
+            "overnightStay": true,
+            "hotel": "hotel custom test",
+            "customHotel": "hotel custom test",
+            "meals": {
+              "breakfast": true,
+              "lunch": false,
+              "dinner": false
+            },
+            "description": "Running in Akuressa :D..............."
+          },
+          {
+            "day": 3,
+            "place": "Mannar",
+            "activity": "Mannar- Jaffna",
+            "customActivity": "",
+            "overnightStay": false,
+            "hotel": "",
+            "customHotel": "",
+            "meals": {
+              "breakfast": true,
+              "lunch": true,
+              "dinner": false
+            },
+            "description": "After breakfast in Mannar, we are heading to Jaffna; Jaffna or Yalpanam is the capital city of the Northern Province of Sri Lanka. Most of the residents of Jaffna are Sri Lankan Tamils with a presence of Sri Lankan Moors and Portuguese Burghers .Yarlpanam is believed to have got its name from Yarl and Panam meaning the land of the Yarl or Veenai, a musical instrument; derived from the myth that this land was received by a Yarl player as a Royal grant in appreciation of his musical performance.            In the evening, we do a city tour of Jaffna covering culture, religions and enjoy some food while mingling with locals"
+          }
+        ],
+        "route": "Galle - Akuressa - Mannar",
+        "routePlaces": [
+          "Galle",
+          "Akuressa",
+          "Mannar"
+        ],
+        "timestamp": "2025-06-21T08:52:59.904Z",
+        "status": "draft",
+        "version": 1
+      },
+      "lastModified": "2025-06-21T08:52:59.961Z",
+      "status": "active"
+    },
+    "itin_1750497072300_zp7b8u3w6": {
+      "id": "itin_1750497072300_zp7b8u3w6",
+      "userId": "user_1750476548458",
+      "timestamp": "2025-06-21T09:11:12.301Z",
+      "data": {
+        "itineraryName": "tour1",
+        "coverImage": "default",
+        "customImage": null,
+        "touristName": "Jhon Doe",
+        "numberOfTravelers": "4",
+        "tourStartDate": "2025-06-21",
+        "numberOfDays": 3,
+        "dailyPlans": [
+          {
+            "day": 1,
+            "place": "Galle",
+            "activity": "Galle,Colombo, Departure",
+            "customActivity": "",
+            "overnightStay": true,
+            "hotel": "Jetwing Lighthouse",
+            "customHotel": "",
+            "meals": {
+              "breakfast": true,
+              "lunch": true,
+              "dinner": true
+            },
+            "description": "Breakfast in Galle–Explore Dutch heritage in Galle by tuk-tuk and you will explore historical importance  of Galle Fort. The ramparts, colonial buildings, clock tower, light house, museum & old church, mosque  & Buddhist temple are covered in this guided tour.  After lunch we are heading to colombo for site seeing the Red Mosque and other attractions in  Colombo. After a mouthwatering Banana Leaf dinner, driver will drop you at the airport for departure  flight"
+          },
+          {
+            "day": 2,
+            "place": "Matara",
+            "activity": "Walking on Matara Beach....",
+            "customActivity": "Walking on Matara Beach....",
+            "overnightStay": false,
+            "hotel": "",
+            "customHotel": "",
+            "meals": {
+              "breakfast": true,
+              "lunch": false,
+              "dinner": true
+            },
+            "description": "Walking on Matara Beach...."
+          },
+          {
+            "day": 3,
+            "place": "Mannar",
+            "activity": "Anawilundawa - Mannar",
+            "customActivity": "",
+            "overnightStay": true,
+            "hotel": "El Shaddai",
+            "customHotel": "",
+            "meals": {
+              "breakfast": true,
+              "lunch": true,
+              "dinner": true
+            },
+            "description": "After breakfast, we are heading to the city Sun-blasted Mannar Island is a dry near-peninsula with lots of white sand and palm trees, gulls and terns, wild donkeys and fishing boats. Culturally, it's an intriguing place: dotted with ancient baobab trees (native to Africa and said to have been planted by Arab merchants many centuries ago) and crumbling colonial edifices built by the Portuguese, Dutch and Brits.                                                                                                       Off the Coast you can see small islands named as first and second islands.Some travelers record their experience of walking across several small islets in the second island is buzzing with activity of fish, crabs and seagulls.And some other traveler identifies the island to be the playground for rare birds.You can also have a look at a popular tourist attraction near Adam’s Bridge called Dancing Islands. The chain of sprinkled islands here has sand dunes in which the sand keeps ‘shifting’ from one location to another. This creates the beautiful illusion of the sands constantly moving and dancing"
+          }
+        ],
+        "route": "Galle - Matara - Mannar",
+        "routePlaces": [
+          "Galle",
+          "Matara",
+          "Mannar"
+        ],
+        "timestamp": "2025-06-21T09:11:12.209Z",
+        "status": "draft",
+        "version": 1
+      },
+      "lastModified": "2025-06-21T09:11:12.301Z",
+      "status": "active"
+    }
+  }
+}

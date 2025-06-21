@@ -1,0 +1,146 @@
+[
+  {
+    "id": "b1d021a9-eccc-48d3-a3e5-9802524b524c",
+    "city": "Sigiriya",
+    "type": "Home Stay",
+    "name": "Nethmi Home, Palitha Home, Skyhome & Treehouse, Amenity Home"
+  },
+  {
+    "id": "902dbf33-77bd-4af8-ad0c-fdb334227841",
+    "city": "Kandy",
+    "type": "Home Stay",
+    "name": "Hanthana Jungle View, Windy Villa, Feel Home"
+  },
+  {
+    "id": "19aea0a7-9278-4d11-aef3-a0d349ce92ff",
+    "city": "Galle",
+    "type": "Home Stay",
+    "name": "Amaranthe Beach Cabana, Rankaty Residence Beach, Beatrice House"
+  },
+  {
+    "id": "c955722b-d6a7-4554-aa99-55c91267c98d",
+    "city": "Sigiriya",
+    "type": "Hotel ",
+    "name": "Sigiriya Rock Hide, The Green Heaven, Aliya Resort   "
+  },
+  {
+    "id": "b1319417-fa5a-4c25-a684-02d7f35ad9b7",
+    "city": "Kandy",
+    "type": "Hotel ",
+    "name": "Serene Garden, Kany Hills, Elegant Hotel"
+  },
+  {
+    "id": "e3d318ab-a972-494b-966a-c439c106e837",
+    "city": "Ella",
+    "type": "Hotel ",
+    "name": "Dream Catcher Ella, Ella Soul, O2 Resort"
+  },
+  {
+    "id": "3c51f9ea-8d2c-41a4-883f-3f440d86f6f6",
+    "city": "Galle",
+    "type": "Hotel ",
+    "name": "Jetwing Lighthouse, Jetwing Kurulubedda, Chaayaa Inn"
+  },
+  {
+    "id": "b47705fd-c967-407e-a7d7-647af880c848",
+    "city": "Anuradapuraya",
+    "type": "Home Stay",
+    "name": "Heaven upon Rice Field"
+  },
+  {
+    "id": "788e3e1c-fd87-4dd1-ad4b-bef08f453614",
+    "city": "Tangalle",
+    "type": "Hotel ",
+    "name": "Eva Lanka"
+  },
+  {
+    "id": "0a077324-0b0d-464a-8bda-c43c1ff896da",
+    "city": "Udawalawe",
+    "type": "Home Stay",
+    "name": "Max Safari"
+  },
+  {
+    "id": "8d3612d2-575c-4919-a070-d37fc264fdd2",
+    "city": "Ella",
+    "type": "Home Stay",
+    "name": "River Splendour Home, Pleasant View, Divine View Home"
+  },
+  {
+    "id": "5690cdb2-9c58-4d26-aa8a-1c6e86771944",
+    "city": "Nuwara Eliya- Ella",
+    "type": "Home Stay",
+    "name": "Pedro View Home Stay"
+  },
+  {
+    "id": "788e49a9-176c-431e-9c7d-79474ede487d",
+    "city": "Negombo",
+    "type": "Home Stay",
+    "name": "Olideb Gedara"
+  },
+  {
+    "id": "e7219e76-6b00-4475-9428-9ec7426fcce7",
+    "city": "Trincomalee",
+    "type": "Hotel ",
+    "name": "Ocean Condo Nilaveli"
+  },
+  {
+    "id": "8aadd2c7-fe1f-42e1-8a9b-53fc89a220af",
+    "city": "Polonnaruwa",
+    "type": "Home Stay",
+    "name": "Kithmi Home Stay"
+  },
+  {
+    "id": "ed73f5d6-4d6d-402c-8b52-3b210ab18443",
+    "city": "Rathnapuraya",
+    "type": "Villa",
+    "name": "The Nature Kuruvita"
+  },
+  {
+    "id": "f5e6c83f-6bf5-463a-a4ac-00ff89d6cde5",
+    "city": "Tissamaharamaya",
+    "type": "Home Stay",
+    "name": "Moonlight Guest House"
+  },
+  {
+    "id": "7dc14fb8-5226-4c17-a38d-960cd63a3803",
+    "city": "Puttalam",
+    "type": "Home Stay",
+    "name": "Captains Bird Safari"
+  },
+  {
+    "id": "b983d2c7-0d45-4c2b-b240-88976321a0e1",
+    "city": "Mannar",
+    "type": "Home Stay",
+    "name": "El Shaddai"
+  },
+  {
+    "id": "7efe8189-d6ec-4bc9-b5fa-52f2b4f58a8c",
+    "city": "Jaffna",
+    "type": "Home Stay",
+    "name": "Malabar Home Stay"
+  },
+  {
+    "id": "2e866764-58e5-4a1b-8dae-a8b5b885f925",
+    "city": "Trincomalee",
+    "type": "Home Stay",
+    "name": "Theepans Home Stay"
+  },
+  {
+    "id": "adb52433-1d01-496c-8a48-878341988f3d",
+    "city": "Muttur",
+    "type": "Hotel ",
+    "name": "Pearl Bunglow"
+  },
+  {
+    "id": "030e668b-4a3b-4b4c-bc05-5f65e56155b3",
+    "city": "Koslanda ",
+    "type": "Home Stay",
+    "name": "The Nature Hub"
+  },
+  {
+    "id": "75d3edc1-41bc-44dc-b1a1-2a0fc4cf8ea1",
+    "city": "Mahiyanganaya",
+    "type": "Hotel ",
+    "name": "New Rest House"
+  }
+]
