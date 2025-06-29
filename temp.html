@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Itinerary Templates</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .page {
+            width: 210mm;
+            height: 297mm;
+            background: white;
+            margin: 0 auto 20px;
+            padding: 20mm;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+            page-break-after: always;
+        }
+
+        /* Page 1 Styles */
+        .page-1 {
+            border: 2px solid #333;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            background: #999;
+            color: white;
+            padding: 15px 30px;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            width: 150px;
+        }
+
+        .contact-info {
+            text-align: right;
+            font-size: 12px;
+            line-height: 1.4;
+        }
+
+        .cover-image {
+            background: #bbb;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .trip-title {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .trip-title h1 {
+            font-size: 24px;
+            color: #2d5016;
+            margin-bottom: 5px;
+        }
+
+        .trip-subtitle {
+            text-align: center;
+            font-size: 14px;
+            margin-bottom: 40px;
+        }
+
+        .map-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .map-placeholder {
+            background: #bbb;
+            height: 150px;
+            width: 200px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .route-info {
+            font-size: 12px;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .page-number {
+            position: absolute;
+            bottom: 15mm;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 12px;
+        }
+
+        /* Page 2 Styles */
+        .page-2 {
+            border: 2px solid #333;
+        }
+
+        .form-row {
+            display: flex;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        .form-label {
+            font-weight: bold;
+            width: 100px;
+            margin-right: 20px;
+        }
+
+        .form-value {
+            color: #0066cc;
+        }
+
+        .section-header {
+            background: #6b8e23;
+            color: white;
+            padding: 8px 15px;
+            font-weight: bold;
+            margin: 20px 0 10px 0;
+            font-size: 14px;
+        }
+
+        .itinerary-table {
+            border: 2px solid #333;
+            margin-bottom: 20px;
+            font-size: 12px;
+        }
+
+        .itinerary-row {
+            border-bottom: 1px solid #333;
+            padding: 8px;
+            display: flex;
+        }
+
+        .day-number {
+            background: #e8f5e8;
+            padding: 5px;
+            border-right: 1px solid #333;
+            width: 80px;
+            font-weight: bold;
+        }
+
+        .activity-details {
+            padding: 5px 10px;
+            flex: 1;
+        }
+
+        .itinerary-detail {
+            background: #e8f5e8;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .meal-schedule {
+            margin-bottom: 10px;
+            font-size: 12px;
+        }
+
+        .meal-item {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .meal-item::before {
+            content: "• ";
+            color: #6b8e23;
+            font-weight: bold;
+        }
+
+        .detail-title {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .detail-content {
+            color: #0066cc;
+            margin-bottom: 15px;
+        }
+
+        .accommodation-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+
+        .accommodation-table th,
+        .accommodation-table td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .accommodation-table th {
+            background: #f0f0f0;
+            font-weight: bold;
+        }
+
+        .accommodation-table .city-cell {
+            color: #0066cc;
+        }
+
+        .controls {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background: #6b8e23;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .btn:hover {
+            background: #5a7a1f;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .page {
+                box-shadow: none;
+                margin: 0;
+                page-break-after: always;
+            }
+            
+            .controls {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="controls">
+        <button class="btn" onclick="showPage(1)">Page 1</button>
+        <button class="btn" onclick="showPage(2)">Page 2</button>
+        <button class="btn" onclick="showBoth()">Both Pages</button>
+        <button class="btn" onclick="window.print()">Print</button>
+    </div>
+
+    <!-- Page 1 -->
+    <div class="page page-1" id="page1">
+        <div class="header">
+            <div class="logo">LOGO</div>
+            <div class="contact-info">
+                (address)<br>
+                Phone: (Sr Lanka): (phone)<br>
+                Email: (*email)<br>
+                Web: (*web)
+            </div>
+        </div>
+
+        <div class="cover-image">
+            TEMPLATE COVER IMG
+        </div>
+
+        <div class="trip-title">
+            <h1>{totalDays} Days – Sri Lanka</h1>
+        </div>
+
+        <div class="trip-subtitle">
+            {totalDays} Days / {totalNights} Nights
+        </div>
+
+        <div class="map-section">
+            <div class="map-placeholder">
+                MAP SS
+            </div>
+        </div>
+
+        <div class="route-info">
+            <strong>Route:</strong> {Route}
+        </div>
+
+        <div class="page-number">1</div>
+    </div>
+
+    <!-- Page 2 -->
+    <div class="page page-2" id="page2">
+        <div class="form-row">
+            <span class="form-label">Name:</span>
+            <span class="form-value">{touristName}</span>
+        </div>
+
+        <div class="form-row">
+            <span class="form-label">Travelers:</span>
+            <span class="form-value">{noOfTravelers}</span>
+        </div>
+
+        <div class="form-row">
+            <span class="form-label">Travel Date:</span>
+            <span class="form-value">{travelDate/period}</span>
+        </div>
+
+        <div class="section-header">Itinerary Brief</div>
+
+        <div class="itinerary-table">
+            <div class="itinerary-row">
+                <div class="day-number">{visitableDate} Day/Number</div>
+                <div class="activity-details">{place} – {activity} (+details)</div>
+            </div>
+        </div>
+
+        <div class="section-header">Itinerary Detail</div>
+
+        <div class="itinerary-detail">
+            <div class="meal-schedule">
+                <span class="meal-item">B: Breakfast</span>
+                <span class="meal-item">L: Lunch</span>
+                <span class="meal-item">D: Dinner</span>
+            </div>
+
+            <div class="detail-title">{DetailTitle}</div>
+
+            <div class="detail-content">{Desc}</div>
+
+            <div class="detail-content">
+                <strong>{+OvernightStay}:</strong><br>
+                {accoSupply}
+            </div>
+        </div>
+
+        <div class="section-header">Accommodations</div>
+
+        <table class="accommodation-table">
+            <thead>
+                <tr>
+                    <th>City</th>
+                    <th>Accommodation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="city-cell">{visitableCity}</td>
+                    <td>{accommodation} (+details)</td>
+                </tr>
+                <tr>
+                    <td>Departure</td>
+                    <td>{departureDate}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="page-number">2</div>
+    </div>
+
+    <script>
+        function showPage(pageNum) {
+            const page1 = document.getElementById('page1');
+            const page2 = document.getElementById('page2');
+            
+            if (pageNum === 1) {
+                page1.style.display = 'block';
+                page2.style.display = 'none';
+            } else if (pageNum === 2) {
+                page1.style.display = 'none';
+                page2.style.display = 'block';
+            }
+        }
+
+        function showBoth() {
+            document.getElementById('page1').style.display = 'block';
+            document.getElementById('page2').style.display = 'block';
+        }
+
+        // Initialize with both pages visible
+        showBoth();
+    </script>
+</body>
+</html>

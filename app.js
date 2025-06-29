@@ -108,6 +108,22 @@ app.get('/api/data/hotels.json', async (req, res) => {
     }
 });
 
+app.get('/api/data/cities.sql', async (req, res) => {
+    try {
+        const filePath = path.join(__dirname, 'db', 'gh', 'cities.sql');
+        const data = await fs.readFile(filePath, 'utf8');
+        
+        res.setHeader('Content-Type', 'text/plain'); // or 'application/sql'
+        res.send(data); // sends raw SQL text
+    } catch (error) {
+        console.error('Error sending SQL file:', error);
+        res.status(500).send('Internal Server Error');
+    }
+});
+
+
+
+//======================
 app.post('/api/login', async (req, res) => {
     const { username, password } = req.body;
     try {
@@ -388,7 +404,7 @@ app.post('/api/download/', async (req, res) => {
         res.json({
             success: true,
             message: 'Itinerary processed successfully',
-            itineraryPath: `/document/${itineraryId}.docx`
+            itineraryPath: `/document/${path.basename(result.documentPath)}` // Now returns PDF path
         });
 
     } catch (error) {
@@ -400,13 +416,13 @@ app.post('/api/download/', async (req, res) => {
     }
 });
 
-// Replace the existing /document/:filename endpoint with this:
+// Serve generated documents (both DOCX and PDF)
 app.get('/document/:filename', async (req, res) => {
     try {
         const { filename } = req.params;
         const filePath = path.join(__dirname, 'db', 'temp', 'tempStore', filename);
         
-        // Check if file exists using fs.promises
+        // Check if file exists using promise-based fs
         try {
             await fs.access(filePath);
         } catch (err) {
@@ -419,20 +435,41 @@ app.get('/document/:filename', async (req, res) => {
             throw err;
         }
         
-        // Set appropriate headers
-        res.setHeader('Content-Type', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document');
+        // Set appropriate headers based on file type
+        if (filename.endsWith('.pdf')) {
+            res.setHeader('Content-Type', 'application/pdf');
+        } else if (filename.endsWith('.docx')) {
+            res.setHeader('Content-Type', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document');
+        } else {
+            return res.status(400).json({
+                error: 'Unsupported file type',
+                details: 'Only PDF and DOCX files are supported'
+            });
+        }
+        
         res.setHeader('Content-Disposition', `attachment; filename=${filename}`);
         
-        // Create a read stream using the regular fs module (not promises)
+        // Stream the file - note we need to use require('fs') here, not the promise version
         const fileStream = require('fs').createReadStream(filePath);
+        fileStream.on('error', (err) => {
+            console.error('File stream error:', err);
+            if (!res.headersSent) {
+                res.status(500).json({ 
+                    error: 'Failed to stream file',
+                    details: err.message 
+                });
+            }
+        });
         fileStream.pipe(res);
         
     } catch (error) {
         console.error('Error serving document:', error);
-        res.status(500).json({ 
-            error: 'Failed to serve document',
-            details: error.message 
-        });
+        if (!res.headersSent) {
+            res.status(500).json({ 
+                error: 'Failed to serve document',
+                details: error.message 
+            });
+        }
     }
 });
 

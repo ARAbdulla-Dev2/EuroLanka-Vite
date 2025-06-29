@@ -17,5 +17,24 @@
       "createdAt": "2025-06-21T03:29:08.458Z",
       "lastLogin": null,
       "noOfItineraries": 0
+   },
+     {
+      "id": "user_1750509893244",
+      "username": "Yusuf",
+      "password": "Yusufnew",
+      "fullName": "Yusuf Mohamed",
+      "profilePic": "/db/img/pp/user_1750509893239.png",
+      "plan": "Basic",
+      "companyInfo": {
+         "companyName": "EuroLanka",
+         "address": "Bandaranayake Place",
+         "phone": "0755838300",
+         "email": "yusuf@eurolanka.de",
+         "website": "",
+         "logo": "/db/img/pp/company_user_1750509893243.png"
+      },
+      "createdAt": "2025-06-21T12:44:53.244Z",
+      "lastLogin": null,
+      "noOfItineraries": 0
    }
 ]

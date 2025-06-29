@@ -1,0 +1,23 @@
+2025.06.11 - Backup EuroLanka Database of October 2024. - Backend
+2025.06.12 - Map itinerary route generator. - FullStack
+2025.06.12 - Map API. - Frontend
+2025.06.13 - Signup / Login / Reset Password base on WhatsApp OTP. - FullStack
+2025.06.14 - Developed the Template file to render. - Backend
+2025.06.15 - Form Generator API + Form generating on website. - Frontend
+2025.06.17 [dead] - Project Errored - FullStack
+2025.06.17 - Started the project with ReactJS + ViteJS Framework. - Frontend
+2025.06.18 - Login / Dashboard. - FullStack
+2025.06.19 - Evelodb Technology in Databases. - Backend
+2025.06.20 - Form Generating + Map Route Generating. - Frontend
+2025.06.20 - Success Data collecting from Forms. - Frontend
+2025.06.21 - Getting a photo of Map Route from API. - Backend
+2025.06.21 - Success Rendering text to the itinerary template - Backend
+2025.06.21 - Website Hosted for testing. - FullStack [v1.0.0]
+2025.06.21 [bug] - Step 4 Map route generator size issue. - Frontned
+2025.06.22 [fix] - Fixed Map route generator size issue. - Frontend
+2025.06.22 [bug] - Step 4 Map route generator places issue. - Frontend
+2025.06.22 [bug] - Step 5 Form rendered only for 1 day issue. - Frontend
+2025.06.28 [fix] - Step 5 Form rendered only for 1 day issue fixed. - Frontend
+2025.06.28 - Getting file in PDF format. - Backend
+2025.06.29 - Added Changelog popup. - Frontend
+2025.06.29 [fix] - Added Missing places on Step 4. - Frontend [v1.0.1]

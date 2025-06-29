@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { captureMapScreenshot } = require('./mapSS');
 const generateDocument = require('./render');
+const convertDocxToPdf = require('./docx2pdf');
 
 class ItineraryEngine {
     constructor() {
@@ -54,19 +55,28 @@ class ItineraryEngine {
             const formattedData = this.formatItineraryData(itineraryData, companyInfo, screenshotPath);
 
             // Step 5: Generate the final document
-            const outputPath = path.join(this.tempStoreDir, `${itineraryId}.docx`);
+            const docxOutputPath = path.join(this.tempStoreDir, `${itineraryId}.docx`);
+            const pdfOutputPath = path.join(this.tempStoreDir, `${itineraryId}.pdf`);
             
             // Ensure temp directory exists
             if (!fs.existsSync(this.tempStoreDir)) {
                 fs.mkdirSync(this.tempStoreDir, { recursive: true });
             }
 
-            await this.generateItineraryDocument(formattedData, outputPath);
+            // Generate Word document
+            await this.generateItineraryDocument(formattedData, docxOutputPath);
+
+            // Convert to PDF
+            await convertDocxToPdf(docxOutputPath, pdfOutputPath);
+
+            // Optionally: Delete the DOCX file if you only want to keep PDF
+            // fs.unlinkSync(docxOutputPath);
 
             return {
                 success: true,
                 itinerary: formattedData,
-                documentPath: outputPath,
+                documentPath: pdfOutputPath, // Now returning PDF path instead of DOCX
+                docxPath: docxOutputPath,    // Optional: keep reference to DOCX if needed
                 screenshotPath: screenshotPath
             };
         } catch (error) {
