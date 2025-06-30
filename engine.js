@@ -48,8 +48,16 @@ class ItineraryEngine {
                 throw new Error(`Company info not found for user ${userId}`);
             }
 
-            // Step 3: Generate map screenshot
-            const screenshotPath = await this.generateRouteScreenshot(itineraryData.route, itineraryId);
+          // Step 3: Generate map screenshot
+const formattedRoute = itineraryData.route.split(' - ').map((part, index) => {
+    // Only process the first part (airport name)
+    if (index === 0) {
+        return part.replace(/\s+/g, ''); // Remove all spaces
+    }
+    return part; // Keep other parts as-is
+}).join(' - ');
+
+const screenshotPath = await this.generateRouteScreenshot(formattedRoute, itineraryId);
 
             // Step 4: Format all data for the document
             const formattedData = this.formatItineraryData(itineraryData, companyInfo, screenshotPath);
