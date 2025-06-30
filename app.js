@@ -52,7 +52,19 @@ const upload = multer({
 // Middleware
 app.use(bodyParser.json());
 app.use(express.json());
-app.use(cors());
+// Configure CORS options
+const corsOptions = {
+  origin: [
+    'https://itinerary.arabdullah.top',
+    'https://map-framer-orpin.vercel.app',
+    'http://localhost:3333',
+    'http://127.0.0.1:3333'
+  ],
+  optionsSuccessStatus: 200 // For legacy browser support
+};
+
+// Apply CORS middleware with options
+app.use(cors(corsOptions));
 app.use(express.static(path.join(__dirname, 'public', 'dist')));
 
 // Helper functions

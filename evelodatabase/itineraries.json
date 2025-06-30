@@ -431,6 +431,78 @@
       },
       "lastModified": "2025-06-28T02:26:28.845Z",
       "status": "active"
+    },
+    "itin_1751245105014_5fdoq9bak": {
+      "id": "itin_1751245105014_5fdoq9bak",
+      "userId": "user_1750476548458",
+      "timestamp": "2025-06-30T00:58:25.014Z",
+      "data": {
+        "itineraryName": "test",
+        "coverImage": "default",
+        "customImage": null,
+        "touristName": "Jhone123",
+        "numberOfTravelers": 1,
+        "tourStartDate": "2025-06-30",
+        "numberOfDays": 3,
+        "dailyPlans": [
+          {
+            "day": 1,
+            "place": "Bandaranayaka International Airport",
+            "activity": "Arrival",
+            "customActivity": "Arrival",
+            "overnightStay": false,
+            "hotel": "",
+            "customHotel": "",
+            "meals": {
+              "breakfast": true,
+              "lunch": false,
+              "dinner": true
+            },
+            "description": "Arrival of Sri Lanka"
+          },
+          {
+            "day": 2,
+            "place": "Akuressa",
+            "activity": "Runningg..........",
+            "customActivity": "Runningg..........",
+            "overnightStay": false,
+            "hotel": "",
+            "customHotel": "",
+            "meals": {
+              "breakfast": true,
+              "lunch": false,
+              "dinner": false
+            },
+            "description": "Runningg.........."
+          },
+          {
+            "day": 3,
+            "place": "Ahungalla",
+            "activity": "Runningg..........",
+            "customActivity": "Runningg..........",
+            "overnightStay": false,
+            "hotel": "",
+            "customHotel": "",
+            "meals": {
+              "breakfast": false,
+              "lunch": true,
+              "dinner": false
+            },
+            "description": "Runningg.........."
+          }
+        ],
+        "route": "Bandaranayaka International Airport - Akuressa - Ahungalla",
+        "routePlaces": [
+          "Bandaranayaka International Airport",
+          "Akuressa",
+          "Ahungalla"
+        ],
+        "timestamp": "2025-06-30T00:58:24.956Z",
+        "status": "draft",
+        "version": 1
+      },
+      "lastModified": "2025-06-30T00:58:25.014Z",
+      "status": "active"
     }
   }
 }
