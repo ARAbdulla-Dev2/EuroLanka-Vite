@@ -21,3 +21,4 @@
 2025.06.28 - Getting file in PDF format. - Backend
 2025.06.29 - Added Changelog popup. - Frontend
 2025.06.29 [fix] - Added Missing places on Step 4. - Frontend [v1.0.1]
+2025.07.04 - Added ToolTips on Map on step 4. - Frontend
